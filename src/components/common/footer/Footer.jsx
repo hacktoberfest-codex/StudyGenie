@@ -20,9 +20,9 @@ const Footer = () => {
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <h1>ACADEMIA</h1>
+            <h1>SMARTLEARNHUB</h1>
             <span>ONLINE EDUCATION & LEARNING</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <p>A smart AI assisted website to help you generate precise notes and help you with your studies.</p>
 
             <i className='fab fa-facebook-f icon'></i>
             <i className='fab fa-twitter icon'></i>
@@ -74,15 +74,15 @@ const Footer = () => {
             <ul>
               <li>
                 <i className='fa fa-map'></i>
-                203 Fake St. Mountain View, San Francisco, California, USA
+                Iter College, Jagmohan Nagar, Jagamara, Bhubneshwar, Odisha-751030
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
-                +2 392 3929 210
+                +1 234 567 8910
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>
-                info@yourdomain.com
+                codecrusaders@gmail.com
               </li>
             </ul>
           </div>
@@ -90,7 +90,7 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-          Copyright ©2022 All rights reserved | This template is made with <i className='fa fa-heart'></i> by GorkhCoder
+          Copyright ©2023 All rights reserved | This website is made with <i className='fa fa-heart'></i> by Code Crusaders
         </p>
       </div>
     </>
