@@ -1,0 +1,116 @@
+
+    .section-login{
+    position:relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: 0.5s;
+    background: black;
+    }
+    .section-login .container .user{
+    position : absolute;
+    top: 0;
+    Left: 0;
+    width: 100%;
+    height: 100%;
+    dispLay: flex;
+    }
+    .section-login .container .user .imgBx{
+    position : relative;
+    width: 50%;
+    height: 50%;
+    transition: 0.5s;
+    }
+    .section-login .container .user .imgBx .image1{
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    max-height: 100vh;
+    }
+.section-login .container .user .formBx-login{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(225deg,#e91e63,#03a9f4);
+    display: flex;
+    justify-content : center;
+    align-items : center;
+    padding : 40px;
+    transition: 0.5s;
+    }
+    .section-login .container .user .formBx-login h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    }
+    ::placeholder{
+        color: #100001;
+    }
+    .section-login .container .user .formBx-login input{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: #000000;
+    font-weight: 800;
+    border-style: none;
+    border-bottom: 5px solid #e91e63;
+    outline:none;
+    box-shadow:none;
+    font-size:14px;
+    margin:8px 0;
+    letter-spacing: 1px;
+    }
+    .section-login .container .user .formBx-login input[type="submit"]{
+    max-width: 100px;
+    background: #677eff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size : 14px;
+    Letter-spacing : 1px;
+    transition: 0.5s;
+    } 
+    .section-login .container .user .formBx-login input[type="submit"]:hover{
+        background: #e91e63;
+    } 
+    .section-login .container .user .formBx-login .signup{
+    position: relative;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    text-transform:uppercase;
+    font-weight:300;
+    }
+    .section-login .container .user .formBx-login .signup .signup{
+    font-weight: 600;
+    text-decoration:none;
+    color:#000000;
+    }
+    @media(max-width:850px){
+        .section-login .container .user .imgBx{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .section-login .container .user .formBx-login {
+            background: rgba(255, 255, 255, 0.9);
+            top: 150px;
+            left: 50px;
+            display: flex;
+            width: 80%;
+            height: 50%;
+            justify-content : center;
+            align-items : center;
+            z-index: 1;
+            }
+            .section-login .container .user .formBx-login input{
+                background: rgba(255, 255, 255,0.1);
+            }
+    }
