@@ -49,7 +49,9 @@ const HAbout = () => {
                       </div>
                     </div>
                   </div>
+                  <a href="http://localhost:3000/courses" target="_blank">
                   <button className='outline-btn'>ENROLL NOW !</button>
+                  </a>
                 </div>
               ))}
             </div>

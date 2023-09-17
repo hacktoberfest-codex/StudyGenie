@@ -9,7 +9,7 @@ const Footer = () => {
         <div className='container flexSB'>
           <div className='left row'>
             <h1>Newsletter - Stay tune and get the latest update</h1>
-            <span>Far far away, behind the word mountains</span>
+            <span>Know about new stuff everyday</span>
           </div>
           <div className='right row'>
             <input type='text' placeholder='Enter email address' />
@@ -24,28 +24,28 @@ const Footer = () => {
             <span>ONLINE EDUCATION & LEARNING</span>
             <p>A smart AI assisted website to help you generate precise notes and help you with your studies.</p>
 
-            <i className='fab fa-facebook-f icon'></i>
-            <i className='fab fa-twitter icon'></i>
-            <i className='fab fa-instagram icon'></i>
+            <a href="https://www.facebook.com/" target="_blank"><i className='fab fa-facebook-f icon'></i></a>
+            <a href="https://www.twitter.com/" target="_blank"><i className='fab fa-twitter icon'></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i className='fab fa-instagram icon'></i></a>
           </div>
           <div className='box link'>
             <h3>Explore</h3>
             <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Courses</li>
-              <li>Blog</li>
-              <li>Contact us</li>
+              <a href="http://localhost:3000/about"><li>About Us</li></a>
+              <a href="http://localhost:3000/team"><li>Services</li></a>
+              <a href="http://localhost:3000/courses"><li>Courses</li></a>
+              <a href="http://localhost:3000/journal"><li>Blog</li></a>
+              <a href="http://localhost:3000/contact"><li>Contact us</li></a>
             </ul>
           </div>
           <div className='box link'>
             <h3>Quick Links</h3>
             <ul>
-              <li>Contact Us</li>
-              <li>Pricing</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy</li>
-              <li>Feedbacks</li>
+              <a href="http://localhost:3000/contact"><li>Contact Us</li></a>
+              <a href="http://localhost:3000/courses"><li>Pricing</li></a>
+              <a href="http://localhost:3000/team"><li>Terms & Conditions</li></a>
+              <a href="http://localhost:3000/team"><li>Privacy</li></a>
+              <a href="http://localhost:3000/team"><li>Feedbacks</li></a>
             </ul>
           </div>
           <div className='box'>
@@ -70,7 +70,7 @@ const Footer = () => {
             ))}
           </div>
           <div className='box last'>
-            <h3>Have a Questions?</h3>
+            <h3>Have a Question?</h3>
             <ul>
               <li>
                 <i className='fa fa-map'></i>
