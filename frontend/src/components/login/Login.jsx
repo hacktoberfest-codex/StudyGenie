@@ -2,8 +2,6 @@ import React, { useState,useContext } from "react";
 import {NavLink,useHistory} from 'react-router-dom';
 import '../../styles/login.css'
 import {userContext} from '../../App'
-import {toast} from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 
 const img1 = require('../../images/Butterfly.png')
@@ -25,22 +23,22 @@ const Login = () => {
         const data = await res.json();
         if(res.status===400||!data){
           // window.alert('Invalid Credentials')
-          toast.warn("Invalid Credential",{
-            theme:"dark"
-          })
+          // toast.warn("Invalid Credential",{
+          //   theme:"dark"
+          // })
         }else if(res.status===201){
           dispatch({type:"USER",payload:true});
           // window.alert('LoggedIn Successfully')
-          toast.success("Login Successful",{
-            theme:"dark"
-          })
+          // toast.success("Login Successful",{
+          //   theme:"dark"
+          // })
           history.push('/');
         }
         else{
           // window.alert('Invalid')
-          toast.error('invalid',{
-            theme:"dark"
-          });
+          // toast.error('invalid',{
+          //   theme:"dark"
+          // });
         }
   }
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import {NavLink,useHistory} from 'react-router-dom';
 import '../../styles/signup.css';
-import {toast} from 'react-toastify'
 
 
 const Signup = () => {
@@ -27,15 +26,15 @@ const Signup = () => {
         })
         const data = await res.json();
         if(res.status===422 || !data){
-            toast.error("Invalid Registration",{
-                toastId:"Error1",
-                theme:'dark'
-            })
+            // toast.error("Invalid Registration",{
+            //     toastId:"Error1",
+            //     theme:'dark'
+            // })
         }else{
-            toast.success("Successfully Registered",{
-                toastId:"Success2",
-                theme:'dark'
-            })
+            // toast.success("Successfully Registered",{
+            //     toastId:"Success2",
+            //     theme:'dark'
+            // })
             history.push('/login');
         }
     }   
@@ -69,7 +68,7 @@ const Signup = () => {
                             <div><label className="labels text-black">Password</label><input value={user.password} onChange={handleInputs} name="password" type="password" className="form-control"/></div>
                             <div><label className="labels text-black">Confirm Password</label><input value={user.confirmPassword} onChange={handleInputs} name="confirm_password" type="password" className="form-control"/></div>
                         </div>
-                        <div className="mt-5 text-center"><button className="bg-dark text btn btn-primary" type="button" onClick={PostData}>Signup</button></div><br/>
+                        <div className="mt-5 text-center"><button className="bg-dark text12 btn btn-primary" type="button" onClick={PostData}>Signup</button></div><br/>
                         <p>Already have an account? <NavLink className='login' to='/login'>Login</NavLink></p>
                     </div>
                 </div>

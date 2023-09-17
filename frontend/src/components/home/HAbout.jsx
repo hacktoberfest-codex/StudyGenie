@@ -49,7 +49,8 @@ const HAbout = () => {
                       </div>
                     </div>
                   </div>
-                  <button className='outline-btn'>ENROLL NOW !</button>
+                  <a href="/courses" target="_blank">
+                  <button className='outline-btn'>ENROLL NOW !</button></a>
                 </div>
               ))}
             </div>

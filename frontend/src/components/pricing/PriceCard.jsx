@@ -12,7 +12,7 @@ const PriceCard = () => {
             {val.price}
           </h1>
           <p>{val.desc}</p>
-          <button className='outline-btn'>GET STARTED</button>
+          <a href="https://razorpay.com/payment-gateway/" target="_blank"><button className='outline-btn'>GET STARTED</button></a>
         </div>
       ))}
     </>

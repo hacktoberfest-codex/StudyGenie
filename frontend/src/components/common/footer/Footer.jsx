@@ -31,21 +31,21 @@ const Footer = () => {
           <div className='box link'>
             <h3>Explore</h3>
             <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Courses</li>
-              <li>Blog</li>
-              <li>Contact us</li>
+              <a href="/about"><li>About Us</li></a>
+              <a href="/team"><li>Services</li></a>
+              <a href="/courses"><li>Courses</li></a>
+              <a href="/journal"><li>Blog</li></a>
+              <a href="/contact"><li>Contact us</li></a>
             </ul>
           </div>
           <div className='box link'>
             <h3>Quick Links</h3>
             <ul>
-              <li>Contact Us</li>
-              <li>Pricing</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy</li>
-              <li>Feedbacks</li>
+              <a href="/contact"><li>Contact Us</li></a>
+              <a href="/courses"><li>Pricing</li></a>
+              <a href="/team"><li>Terms & Conditions</li></a>
+              <a href="/team"><li>Privacy</li></a>
+              <a href="/team"><li>Feedbacks</li></a>
             </ul>
           </div>
           <div className='box'>

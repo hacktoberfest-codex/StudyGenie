@@ -2,8 +2,10 @@ import React from "react"
 import "./courses.css"
 import { online } from "../../dummydata"
 import Heading from "../common/heading/Heading"
+import { useHistory } from "react-router-dom/cjs/react-router-dom"
 
 const OnlineCourses = () => {
+  const h = useHistory();
   return (
     <>
       <section className='online'>
@@ -17,6 +19,7 @@ const OnlineCourses = () => {
                   <img src={val.hoverCover} alt='' className='show' />
                 </div>
                 <h1>{val.courseName}</h1>
+                <button><a href="https://text-summarize-rho.vercel.app/">Check your notes</a></button>
               </div>
             ))}
           </div>
@@ -25,5 +28,7 @@ const OnlineCourses = () => {
     </>
   )
 }
+
+
 
 export default OnlineCourses
